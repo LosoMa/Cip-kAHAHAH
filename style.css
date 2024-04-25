@@ -59,3 +59,33 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     margin: 0 0 20px 0;
 }
 
+<<<<<<< HEAD
+=======
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 300px;
+}
+.popup {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+.popupwindow{
+    display: flex;
+}
+#Button1{
+    margin-bottom: 1rem;
+}
+>>>>>>> 205db4f9714ae69bd4e943c3563b11e6db2c391e
