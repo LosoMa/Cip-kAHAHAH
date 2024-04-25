@@ -99,13 +99,3 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     margin: 0 0 20px 0;
 }
 
-.myContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.card{
-    width: 300px;
-}
