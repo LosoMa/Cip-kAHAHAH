@@ -42,8 +42,8 @@ body{
     left: 0; 
     min-width: 200px; 
     padding: 10px; 
-    background: gray;
-    border: 1px solid #ccc; 
+    background: rgb(0, 0, 0);
+    
     z-index: 1000; 
     white-space: nowrap;
 }
