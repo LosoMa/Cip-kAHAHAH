@@ -8,7 +8,17 @@
 .card{
     width: 300px;
     margin-bottom: 2rem;
+    overflow: hidden;
 }
 .card-title{
     font-weight: 600;
+}
+.card-text{
+    font-style: italic;
+}
+.card img{
+    transition: transform 0.25s;
+}
+.card img:hover{
+    transform: scale(1.1);
 }
