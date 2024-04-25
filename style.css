@@ -41,29 +41,87 @@ p{
     margin-bottom: 20px;
 }
 h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
-    color: gray;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
 }
 .footer-nav{
-    color: grey;
+    color: black;
 }
 ::-webkit-selection{
     color: #fff;
-    background: #d1c286;
+    background: gray;
 }
   
   ::-moz-selection{
     color: #fff;
-    background: #d1c286;
+    background: gray;
 }
   
 ::selection{
     color: #fff;
-    background: #d1c286;
+    background: gray;
+}
+.login-registration{
+    display: flex; 
+    align-items: center; 
 }
 
+.nav-button{
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/*--------------------FOOTER---------------------------------------*/
+.footer-menu{
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+}
+  
+  .footer-menu li{
+    margin-right: 20px; 
+}
+  
+  .footer-menu li:last-child{
+    margin-right: 0; 
+}
+  
+  .footer-menu li a{
+    color: white; 
+    text-decoration: none; 
+}
+  
+  .footer-menu li a:hover{
+    text-decoration: underline; 
+}
+.footer-outer{
+    background-color: black;
+}
 
+.social-icons-footer .bx{
+    color: white;
+}
+.social-icons-footer li a {
+    color: white; 
+}
+.footer-menu li a:hover,
+.social-icons-footer li a:hover {
+    color: gray;
+    text-decoration: none;
+}
+.footer-inner{
+    position: relative;
+}
+  
+.copyright {
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+}
+  
 
 
