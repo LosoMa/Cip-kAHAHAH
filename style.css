@@ -37,19 +37,21 @@ body{
   content: "";
 }
 .dropdown {
-    display: inline-block; /* Egy sorban jelenjenek meg */
+    display: flex; /* Egy sorban jelenjenek meg */
     top: 100%; 
     left: 0; 
     min-width: 200px; 
     padding: 10px; 
     background: rgb(0, 0, 0);
-    
+    align-items: center;
+    justify-content: center;
     z-index: 1000; 
     white-space: nowrap;
 }
 .dropdown ul {
-    display: inline-block; 
+    display: flex; 
     vertical-align: top; 
+
 }
 .menu-1 ul > li {
     display: inline-block;
