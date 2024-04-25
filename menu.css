@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*h1, h2, h3, h4, h5, h6, figure {
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}*/
+
+.megb-nav {
+    margin-top: 20px;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.megb-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.megb-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.megb-nav ul li a {
+    font-size: 18px;
+    color: grey;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.megb-nav ul li a:hover {
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: 10px;
+    background: rgba(0, 0, 0.8);
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+.megb-nav ul li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown ul {
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown ul li {
+    margin: 5px 0;
+}
+
+.dropdown ul li a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.dropdown ul li a:hover {
+    background-color: gray;
+}
+
+
+.search{
+    margin-right: 20px; 
+}
+a{
+    color: grey;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none;
+}
+#megb-logo a {
+    font-size: 4.5rem;
+    color: white;
+}
+#megb-logo a:hover{
+    color: gray;
+}
+/*---------------------------------------MENÜ---------------------------------*/
+.menu-center {
+    display: inline-block;
+}
+.menu-center ul li a,
+.megb-nav ul li a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu-center ul li a:hover,
+.megb-nav ul li a:hover{
+  color: grey;
+}
+.megb-nav .menu-1 {
+    display: flex;
+    align-items: center; 
+    padding: 0;
+}
+
+.megb-nav .menu-1 li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.megb-nav .menu-1 li:last-child {
+    margin-right: 0;
+}
+.dropdown ul li a{
+  color: white;
+}
+
+.megb-nav{
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+.menu-center ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative; 
+}
+.menu-center ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-center ul li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.menu-center ul li a:hover{
+    color: grey;
+}
+.menu-center ul li:hover > ul{
+    display: block;
+}
+.menu-center ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    white-space: nowrap;
+}
+.menu-center ul li ul li{
+    margin: 5px 0;
+}
+.menu-center ul li ul li a{
+    color: white;
+}
+.menu-center ul li ul li a:hover{
+    background-color: grey;
+}
