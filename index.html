@@ -67,14 +67,14 @@
           <button class="btn btn-primary" id="searchButton" type="button">Keresés</button>
         </div>
   
-        <!-- Kártyák megjelenítése -->
+        
         <div class="row" id="cardContainer">
-          <!-- Itt jelennek meg a kártyák -->
+          
         </div>
       </div>
   
       <script>
-        // Keresési funkció
+        
         document.getElementById("searchButton").addEventListener("click", function () {
           var input = document.getElementById("searchInput").value.toLowerCase();
           var cards = document.querySelectorAll(".card");
@@ -84,9 +84,9 @@
             var text = card.querySelector(".card-text").textContent.toLowerCase();
   
             if (title.includes(input) || text.includes(input)) {
-              card.style.display = "block"; // Ha a keresett szöveg megtalálható a címben vagy a szövegben, megjelenítjük a kártyát
+              card.style.display = "block"; 
             } else {
-              card.style.display = "none"; // Ellenkező esetben elrejtjük
+              card.style.display = "none"; 
             }
           });
         });
