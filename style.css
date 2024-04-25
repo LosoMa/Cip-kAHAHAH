@@ -38,7 +38,6 @@ body{
 }
 .dropdown {
     display: inline-block; /* Egy sorban jelenjenek meg */
-    position: absolute; /* Abszolút pozícionálás a szülőhöz képest */
     top: 100%; 
     left: 0; 
     min-width: 200px; 
@@ -77,7 +76,7 @@ body{
 }
 
 a{
-    color: white;
+    color: grey;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -85,7 +84,7 @@ a{
 }
 
 a:hover, a:active, a:focus {
-    color: grey;
+    color: white;
     outline: none;
     text-decoration: none;
 }
@@ -98,4 +97,11 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     font-weight: 400;
     margin: 0 0 20px 0;
 }
+.footer-nav{
+    color: grey;
+}
+
+
+
+
 
