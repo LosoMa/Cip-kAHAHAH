@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.7;
     color: #828282;
@@ -20,7 +20,7 @@ body{
     transition: 0.5s;
 }
 .offcanvas #page {
-    overflow: hidden; /*Talán értem*/
+    overflow: hidden; 
     position: absolute;
 }
 .offcanvas #page:after {
@@ -36,8 +36,48 @@ body{
   background: rgba(0, 0, 0, 0.7);
   content: "";
 }
+.dropdown {
+    display: inline-block; /* Egy sorban jelenjenek meg */
+    position: absolute; /* Abszolút pozícionálás a szülőhöz képest */
+    top: 100%; 
+    left: 0; 
+    min-width: 200px; 
+    padding: 10px; 
+    background: gray;
+    border: 1px solid #ccc; 
+    z-index: 1000; 
+    white-space: nowrap;
+}
+.dropdown ul {
+    display: inline-block; 
+    vertical-align: top; 
+}
+.menu-1 ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 3.5rem;
+}
+
+.menu-1 ul > li a {
+    font-size: 18px; 
+}
+.search,
+.kosár{
+    list-style: none;
+}
+.menu-1 ul {
+    list-style: none; 
+}
+.megb-nav{
+    margin-top: 20px; 
+    background-color: black;
+}
+#megb-logo a {
+    font-size: 4.5rem; 
+}
+
 a{
-    color: #d1c286;
+    color: white;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -45,7 +85,7 @@ a{
 }
 
 a:hover, a:active, a:focus {
-    color: #d1c286;
+    color: grey;
     outline: none;
     text-decoration: none;
 }
@@ -53,9 +93,19 @@ p{
     margin-bottom: 20px;
 }
 h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
-    color: #000;
+    color: gray;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
 }
 
+.myContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 300px;
+}
