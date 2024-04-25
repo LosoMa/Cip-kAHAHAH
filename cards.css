@@ -18,7 +18,10 @@
 }
 .card img{
     transition: transform 0.25s;
+    box-shadow: 0 2px 0 rgb(181, 181, 181);
+    margin-bottom: 10px;
 }
 .card img:hover{
     transform: scale(1.1);
+    box-shadow: 0 2px 0 black;
 }
