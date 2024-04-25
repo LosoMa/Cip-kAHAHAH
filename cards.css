@@ -18,7 +18,7 @@
 }
 .card img{
     transition: transform 0.25s;
-    box-shadow: 0 2px 0 rgb(181, 181, 181);
+    box-shadow: 0 2px 0 green;
     margin-bottom: 10px;
 }
 .card img:hover{
@@ -27,4 +27,11 @@
 }
 .discount{
     text-decoration: line-through;
+}
+.card a{
+    background-color: green;
+    border: green;
+}
+.card a:hover{
+    background-color: darkgreen;
 }
