@@ -1,0 +1,13 @@
+Shoes Prices OnStock
+AirJordan1 99999 13
+AirJordan3 74999 38
+AirJordan4 119999 0
+AirJordan5 99999 10
+AirJordan11 75000 4
+AirForce1 60000 16
+AirMax97 50000 21
+AirFoampositeOne 60000 7
+YeezyFoamRNNR 80000 0
+KobeVI 300000 1
+LeBron20 40000 4
+JaMorant1 350000 11
