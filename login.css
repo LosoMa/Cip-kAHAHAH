@@ -6,7 +6,7 @@
 
 }
 body{
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
 }
 .container{
     display: flex;
@@ -19,7 +19,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
     max-height: 550px;
     width: 300px;
     overflow: hidden;
@@ -107,3 +107,6 @@ form button:hover{
     background-color: #6d44b8;
     
 }
+.form a{
+    color: #fff;
+} 
