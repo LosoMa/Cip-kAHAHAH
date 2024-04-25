@@ -58,3 +58,25 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     font-weight: 400;
     margin: 0 0 20px 0;
 }
+.popup {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+
+.popupwindow{
+    display: flex;
+}
+#Button1{
+    margin-bottom:1rem ;
+}
+.popupbuttons{
+    border-radius: 5px;
+    padding: 1rem;
+}
