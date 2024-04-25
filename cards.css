@@ -1,10 +1,14 @@
-.myContainer{
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    
 }
 .card{
     width: 300px;
+    margin-bottom: 2rem;
+}
+.card-title{
+    font-weight: 600;
 }
