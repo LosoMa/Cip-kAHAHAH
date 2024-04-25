@@ -122,6 +122,13 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     bottom: 0;
     right: 7px;
 }
+.social-icons-footer ul li:hover .bx {
+    animation: tada 0.8s;
+  }
   
+.social-icons-footer ul li:hover a{
+    /* Bármilyen stílus, amit az anchor címre akarsz alkalmazni a hover eseményre */
+}
+    
 
 
