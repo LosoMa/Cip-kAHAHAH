@@ -72,7 +72,7 @@ label{
 
 .register{
     background:#eee ;
-    border-radius: 70% /10%;
+    border-radius: 12px;
     transform: translateY(5%);
     transition: .8s ease-in-out;
     padding: 1rem;
