@@ -129,4 +129,6 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     margin: 0 auto;
     
 }
-
+.footer-outer h1{
+    margin-top: 1rem;
+}
