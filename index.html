@@ -80,9 +80,15 @@
               <li><a href="support.html">Kapcsolat</a></li>
             </ul>
             <div class="cart">
-              
-              <a href=""><i class="bi bi-bag"> </i></a>
+              <a id="cartbutton" href=""><i class="bi bi-bag"></i></a>
             </div>
+            
+            <script>
+              document.getElementById("cartbutton").addEventListener("click", function (event) {
+                event.preventDefault(); 
+              });
+            </script>
+            
           </div>
           <div class="col-md-5 col-xs-6 text-right hidden-xs menu-2">
             <ul>
@@ -100,8 +106,8 @@
               </li> --->
               <div class="col-md-5 col-xs-6 text-right hidden-xs menu-2">
                 <ul class="login-registration">
-                  <a href="login.html" class="nav-button">Bejelentkezés</a>
-                  <a href="login.html" class="nav-button">Regisztráció</a>
+                  <a target="_blank" href="login.html" class="nav-button">Bejelentkezés</a>
+                  <a target="_blank" href="login.html" class="nav-button">Regisztráció</a>
                 </ul>
               </div>
             </ul>
