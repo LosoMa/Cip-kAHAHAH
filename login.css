@@ -13,7 +13,10 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vh;
-    height: 100vh;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 0;
+
    
 }
 .main{
@@ -111,3 +114,45 @@ form button:hover{
 .form a{
     color: #fff;
 } 
+.add{
+    background: #000;
+    color: #eee;
+    
+    justify-content: center;
+    align-items: center;
+}
+.add-text{
+    margin: 0 auto;
+}
+.add-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-text button a{
+    color: #000;
+    text-decoration: none;
+    
+    
+}
+.add-text button{
+    border-radius: 15px;
+    width: 20%;
+    margin-left: 40%;
+}
+@media (max-width: 941px) {
+    .add-img{
+        display: none           ;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        
+        max-width: 50%;
+
+    }
+    .add-text button{
+    width: 100%;
+    margin: 0;
+    }
+}
