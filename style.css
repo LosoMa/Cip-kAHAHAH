@@ -124,12 +124,7 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
 }
 .social-icons-footer ul li:hover .bx {
     animation: tada 0.8s;
-  }
-  
-.social-icons-footer ul li:hover a{
-    /* Bármilyen stílus, amit az anchor címre akarsz alkalmazni a hover eseményre */
-}
-    
+  } 
 .cart{
     margin: 0 auto;
     
