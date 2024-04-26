@@ -29,7 +29,42 @@
             <ul>
               <li class="has-dropdown"><a href="#">Kínálat</a>
                 <ul class="dropdown">
-                  <li><a href="#">Sport cipők</a></li>
+                  <li><a id="Sportshoes" href="#">Sport cipők</a></li>
+
+                  <script>
+                    
+                    function showSportShoes() {
+                      var sportShoesCards = document.querySelectorAll('.sport'); 
+                  
+                      sportShoesCards.forEach(function (card) {
+                        card.style.display = 'block'; 
+                      });
+                  
+                      var otherCards = document.querySelectorAll('.card:not(.sport)'); 
+                  
+                      otherCards.forEach(function (card) {
+                        card.style.display = 'none'; 
+                      });
+                    }
+                  
+                    
+                    document.getElementById("Sportshoes").addEventListener("click", function (event) {
+                      event.preventDefault(); 
+                  
+                      showSportShoes(); 
+                    });
+
+                    function showAllCards() {
+                      var allCards = document.querySelectorAll('.card'); 
+                  
+                      allCards.forEach(function (card) {
+                        card.style.display = 'block'; 
+                      });
+                    }
+                  </script>
+                  
+
+
                   <li><a href="#">Utcai cipők</a></li>
                 </ul>
               </li>
@@ -69,14 +104,12 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" id="searchInput" class="form-control" placeholder="Keresés...">
-          <button class="btn btn-primary" id="searchButton" type="button">Keresés</button>
+          <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+          <button class="btn btn-primary" id="searchButton" type="button">Search</button>
         </div>
   
         
-        <div class="row" id="cardContainer">
-          
-        </div>
+
       </div>
   
       <script>
@@ -109,7 +142,7 @@
           <div class="card-body">
             <h5 class="card-title">Air Jordan 1</h5>
             <p class="card-text">Férfi Nike cipő</p>
-            <a href="#" class="btn btn-primary cardbtn" id="jordan1">Kosárba - <b class="discount">99.999 Ft</b> <b>79.999 Ft</b> </a>
+            <a href="#" class="btn btn-primary cardbtn" id="jordan1">Kosárba - <b class="discount">99.999 Ft</b> <b>10001</b> </a>
           </div>
         </div>
         <div class="card col-12 col-md-6 col-lg-3">
@@ -176,7 +209,7 @@
             <a href="#" class="btn btn-primary cardbtn" id="foamrunner">Kosárba - <b>79.999 Ft</b> </a>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-3">
+        <div class="card col-12 col-md-6 col-lg-3 sport">
           <img src="./img/kobegrinch.jpg" class="card-img-top" alt="">
           <div class="card-body">
             <h5 class="card-title">Kobe VI</h5>
@@ -184,7 +217,7 @@
             <a href="#" class="btn btn-primary cardbtn" id="kobe6">Kosárba - <b>249.999 Ft</b> </a>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-3">
+        <div class="card col-12 col-md-6 col-lg-3 sport">
           <img src="./img/lebron20_b.jpg" class="card-img-top" alt="">
           <div class="card-body">
             <h5 class="card-title">LeBron 20</h5>
@@ -192,7 +225,7 @@
             <a href="#" class="btn btn-primary cardbtn" id="lebron20">Kosárba - <b>39.999 Ft</b> </a>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-3">
+        <div class="card col-12 col-md-6 col-lg-3 sport">
           <img src="./img/ja1_b.jpg" class="card-img-top" alt="">
           <div class="card-body">
             <h5 class="card-title">Ja Morant 1</h5>
@@ -200,13 +233,6 @@
             <a href="#" class="btn btn-primary cardbtn" id="jamorant1">Kosárba - <b>34.999 Ft</b> </a>
           </div>
         </div>
-
-
-
-
-
-
-
       </div>
 
     </main>
