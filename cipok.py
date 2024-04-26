@@ -1,5 +1,5 @@
 def penzvaltas(price: int, arfolyam: float) -> float:
-    # Az új ár dollárban vagy euróban
+
     new_price = round(price * arfolyam, 2)
     return new_price
 
@@ -14,14 +14,14 @@ with open("cipok.txt", "r", encoding="utf8") as text:
         tempLine = line.strip().split()
         row = dict()
         row["Shoes"] = tempLine[0]
-        row["Prices"] = int(tempLine[1])  # Konvertáljuk az árat int típusúra
-        row["OnStock"] = int(tempLine[2])  # Konvertáljuk az OnStock értéket int típusúra
+        row["Prices"] = int(tempLine[1])  
+        row["OnStock"] = int(tempLine[2])  
         textContent.append(row)
 
 arfolyamok = {
-    "ft": 1,  # forint
-    "usd": 0.0031,  # dollár
-    "eur": 0.0027  # euró
+    "ft": 1,  
+    "usd": 0.0031,  
+    "eur": 0.0027  
 }
 
 penznem = input("Válassz valutát (ft/usd/eur): ").lower()
