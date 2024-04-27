@@ -79,23 +79,22 @@
     background-color: gray;
 }
 
-
 .search{
     margin-right: 20px; 
 }
 a{
     color: grey;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
     text-decoration: none;
 }
 #megb-logo a {
     font-size: 4.5rem;
     color: white;
-}
+} 
 #megb-logo a:hover{
-    color: gray;
+    color: green;
 }
 /*---------------------------------------MENÜ---------------------------------*/
 .menu-center {
@@ -112,7 +111,7 @@ a{
 }
 .menu-center ul li a:hover,
 .megb-nav ul li a:hover{
-  color: grey;
+  color: green;
 }
 .megb-nav .menu-1 {
     display: flex;
