@@ -96,8 +96,9 @@ a {
     color: white;
 }
 
-#megb-logo a:hover{
-    color: green;
+#megb-logo a::after {
+    content: attr(data-last-letter); /* Az utolsó karakter beillesztése a ::after pseudo-elembe */
+    color: green; /* Az utolsó betű (X) színe */
 }
 
 /*---------------------------------------MENÜ---------------------------------*/
