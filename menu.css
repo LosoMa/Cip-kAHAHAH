@@ -9,10 +9,10 @@
 }*/
 
 .megb-nav {
-    
+
     background-color: black;
     text-align: center;
-    margin-top:0 !important;
+    margin-top: 0 !important;
     margin-bottom: 1rem;
 }
 
@@ -54,11 +54,11 @@
 }
 
 .megb-nav ul li:hover .dropdown {
-    display: block; 
+    display: block;
 }
 
 .dropdown ul {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -70,52 +70,59 @@
 .dropdown ul li a {
     color: white;
     text-decoration: none;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .dropdown ul li a:hover {
     background-color: gray;
 }
 
-.search{
-    margin-right: 20px; 
+.search {
+    margin-right: 20px;
 }
-a{
+
+a {
     color: grey;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     text-decoration: none;
 }
+
 #megb-logo a {
     font-size: 4.5rem;
     color: white;
-} 
-#megb-logo a:hover{
+}
+
+#megb-logo a:hover {
     color: green;
 }
+
 /*---------------------------------------MENÜ---------------------------------*/
 .menu-center {
     display: inline-block;
 }
+
 .menu-center ul li a,
-.megb-nav ul li a{
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+.megb-nav ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
+
 .menu-center ul li a:hover,
-.megb-nav ul li a:hover{
-  color: green;
+.megb-nav ul li a:hover {
+    box-shadow: 0 2px 0 green;
 }
+
 .megb-nav .menu-1 {
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 0;
 }
 
@@ -127,29 +134,32 @@ a{
 .megb-nav .menu-1 li:last-child {
     margin-right: 0;
 }
-.dropdown ul li a{
-  color: white;
+
+.dropdown ul li a {
+    color: white;
 }
 
-.megb-nav{
-  margin-top: 20px;
-  background-color: black;
-  text-align: center;
-  width: 100%;
+.megb-nav {
+    margin-top: 20px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
 }
-.menu-center ul{
+
+.menu-center ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    position: relative; 
+    position: relative;
 }
+
 .menu-center ul li {
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
-.menu-center ul li a{
+.menu-center ul li a {
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -157,29 +167,42 @@ a{
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.menu-center ul li a:hover{
+
+.menu-center ul li a:hover {
     color: grey;
 }
-.menu-center ul li:hover > ul{
+
+.menu-center ul li:hover>ul {
     display: block;
 }
-.menu-center ul li ul{
+
+.menu-center ul li ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     min-width: 200px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     white-space: nowrap;
 }
-.menu-center ul li ul li{
+
+.menu-center ul li ul li {
     margin: 5px 0;
 }
-.menu-center ul li ul li a{
+
+.menu-center ul li ul li a {
     color: white;
 }
-.menu-center ul li ul li a:hover{
+
+.menu-center ul li ul li a:hover {
     background-color: grey;
+}
+.input-group button{
+    background-color: green;
+    border: green;
+}
+.input-group button:hover{
+    background-color: darkgreen;
 }
