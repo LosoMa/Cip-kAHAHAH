@@ -120,7 +120,7 @@ a {
     transition: 0.3s;
 }
 
-.menu-center ul li a:hover,
+.menu-center ul li :hover,
 .megb-nav ul li a:hover {
     box-shadow: 0 2px 0 green;
     -webkit-transition: 0.1s;
