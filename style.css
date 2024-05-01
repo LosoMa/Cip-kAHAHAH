@@ -132,3 +132,54 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
 .footer-outer h1{
     margin-top: 1rem;
 }
+.inspect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    max-width: 50%;
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    
+  }
+  
+  .inspectmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+  }
+  
+  .inspecttext {
+    padding-left: 0 auto;
+    margin: 2vh;
+  }
+  .inspecttext h1 {
+    padding-left: 0 auto;
+    margin: 2vh;
+    color: black;
+  }
+  .inspectcontainer{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: none;
+  }
+
+  @media (max-width: 1466px) {
+    .inspectmain {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 591px) {
+    .inspectpic img {
+      display: none;
+    }
+  }

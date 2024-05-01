@@ -17,7 +17,14 @@
 
 </head>
 
+
+
 <body>
+  <div class="inspectcontainer">
+
+  </div>
+
+  
   <div id="page">
     <nav class="megb-nav" role="navigation">
       <div class="container">
@@ -143,6 +150,24 @@
   
       </div>
     </nav>
+
+
+    <div class="inspect">
+      <div class="inspectmain">
+          <div class="inspectpic">
+              <img src="./img/airforce1_a.jpg" alt="">
+          </div>
+          
+          <div class="inspecttext">
+              <h1>CIPO</h1>
+              <p>Ez egy fantasy REAL jordan 4-es tökéletes állapotban  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto deleniti, perspiciatis iusto in hic eaque soluta error molestiae, recusandae nulla labore deserunt dolorum aperiam, sequi illum dolor repudiandae itaque.</p>
+              <div class="inspectbutton">
+                  <button id="closeButton"><a href="">Close</a></button>
+              </div>
+          </div>
+  
+      </div>
+  </div>
     
     <main>
 
@@ -322,7 +347,49 @@
 
       });
     </script>
+    <script>
+      
+      // Define a function to handle the click event on card buttons
+      function handleCardButtonClick(event) {
+        event.preventDefault(); 
+  
+        // Get the inspect container and inspect elements
+        var inspectContainer = document.querySelector('.inspectcontainer');
+        var inspect = document.querySelector('.inspect');
+  
+        // Set their display properties
+        inspectContainer.style.display = 'block';
+        inspect.style.display = 'flex';
+      }
+  
+      // Add event listener to the document for click events
+      document.addEventListener('click', function(event) {
+        // Check if the clicked element has the class "cardbtn"
+        if (event.target.classList.contains('cardbtn')) {
+          // If so, handle the click event
+          handleCardButtonClick(event);
+        }
 
+      });
+    </script>
+  <script>
+    // Function to handle the click event on the close button inside the inspect section
+    function handleCloseButtonClick(event) {
+      event.preventDefault();
+
+      // Reload the page
+      location.reload();
+    }
+
+    // Add event listener to the document for click events
+    document.addEventListener('click', function(event) {
+      // Check if the clicked element has the id "closeButton"
+      if (event.target.id === 'closeButton') {
+        // If so, handle the click event
+        handleCloseButtonClick(event);
+      }
+    });
+  </script>
 </body>
 
 </html>
