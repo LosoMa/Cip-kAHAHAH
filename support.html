@@ -35,35 +35,7 @@
           </ul>
         </div>
       </div>
-      <div class="input-group mb-3">
-        <input type="text" id="searchInput" class="form-control" placeholder="Keresés...">
-        <button class="btn btn-primary" id="searchButton" type="button">Keresés</button>
-      </div>
-
       
-      <div class="row" id="cardContainer">
-        
-      </div>
-    </div>
-
-    <script>
-      
-      document.getElementById("searchButton").addEventListener("click", function () {
-        var input = document.getElementById("searchInput").value.toLowerCase();
-        var cards = document.querySelectorAll(".card");
-
-        cards.forEach(function (card) {
-          var title = card.querySelector(".card-title").textContent.toLowerCase();
-          var text = card.querySelector(".card-text").textContent.toLowerCase();
-
-          if (title.includes(input) || text.includes(input)) {
-            card.style.display = "block"; 
-          } else {
-            card.style.display = "none"; 
-          }
-        });
-      });
-    </script>
 
     </div>
 
