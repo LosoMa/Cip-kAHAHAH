@@ -161,6 +161,14 @@ h1, h2, h3, h4, h5, h6, figure {   /*Nem biztos hogy kell mindegyik h*/
     margin: 2vh;
     color: black;
   }
+  .inspectbutton a{
+    color: black;
+  }
+  .inspectbutton button{
+    border-radius: 5px;
+    width: 10vh;
+ 
+  }
   .inspectcontainer{
     width: 100vw;
     height: 100vh;
